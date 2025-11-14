@@ -6,7 +6,7 @@ from .weaver import register_aspect
 def aspect(pointcut_obj):
 
     """
-    Decorator of aspect with 'around' advice.
+    Decorator de aspect com advice 'around'.
     """
     def decorator(advice_func):
         register_aspect(pointcut_obj, advice_func)
